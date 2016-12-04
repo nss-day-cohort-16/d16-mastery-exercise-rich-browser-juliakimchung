@@ -15,11 +15,7 @@ DOM.listToys = (inventory)=>{
   let cardDiv = document.createElement("div"); 
   cardDiv.innerHTML = (toyTemplate(inventory));
   console.log("cardDiv", cardDiv);
-  cards.append(cardDiv);//appends our rendered html. carTemplate(inventory) returns rendered html
-  
-
-  // Now that the DOM is loaded, establish all the event listeners needed
-  // eventStuff();
+  cards.append(cardDiv);
 };
 
 module.exports = Dom;
