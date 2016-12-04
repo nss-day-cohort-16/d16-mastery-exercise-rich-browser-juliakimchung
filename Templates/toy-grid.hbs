@@ -1,0 +1,9 @@
+{{>navbar}}
+
+{{#each cars}}
+	<section class="col-xs-4" id ="inventory-cards" "{{@index}}" style="border: 1px dotted">
+		<h3>{{name}}</h3> <p>{{price}} </p><h5>{{url}} </h5><p>{{id}}</p>
+		<h6 class = "description">{{description}}</h6>
+	</section>
+
+{{/each}}
